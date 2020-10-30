@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+/* colors: https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557 */
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+html {
+  margin:0 !important;
+}
+
+body {
+  background: #f1faee;
+  height: 100%;
+}
+
+section {
+  height: 100vh;
+}
+
+.hero {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.title {
+  font-weight: 400;
+  font-size: 5em;
+}
+.sub-title{
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.row {
+  flex-direction: row;
+  margin: 15% 0;
+}
+
+.row:nth-child(2) {
+  flex-direction: row-reverse;
+  
+}
+
+.row > :first-child {
+  width: 60%;
+  max-width: 600px;
+  background:rgba(69, 123, 157,.6);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  padding: 1% 2%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.text > p {
+  text-align: justify;
+  margin:0;
+}
+
+
+@media only screen and (max-width: 800px) { 
+  .row > :first-child { 
+    width:100%;
+    font-size: 15px;
+  }
+  .title {
+    font-weight: 400;
+    font-size: 3em;
+  }
+  .sub-title{
+    font-size: 1em;
+  }
+}
